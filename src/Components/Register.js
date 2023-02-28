@@ -86,7 +86,7 @@ const Register = () => {
   return (
     <>
       <div className={styles.backgroundR}>
-        <div className={`${styles.container}`}>
+        <div className={`${styles.containerR}`}>
           <h1 className={`${styles.headerR}`}> Register</h1>
           <div className="form">
             <form>
@@ -101,6 +101,7 @@ const Register = () => {
                   value={inputValues.name}
                   required
                 />
+                <p className={sty}></p>
               </div>
               <div className={styles.inputcontainer}>
                 <div className={styles.label}>Email </div>
@@ -113,7 +114,7 @@ const Register = () => {
                   value={inputValues.email}
                   required
                 />
-                {<p className="error">{validation.email}</p>}
+                {<p className={styles.error}>{validation.email}</p>}
               </div>
 
               <div className={styles.inputcontainer}>
