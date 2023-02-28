@@ -101,7 +101,7 @@ const Register = () => {
                   value={inputValues.name}
                   required
                 />
-                <p className={sty}></p>
+                <p className={styles.error}></p>
               </div>
               <div className={styles.inputcontainer}>
                 <div className={styles.label}>Email </div>
